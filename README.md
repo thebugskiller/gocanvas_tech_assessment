@@ -1,60 +1,75 @@
-# Breweries List Assessment
-​
-## Requirements
-​
-For development, you will only need Node.js installed on your environment.
-And please use the appropriate [Editorconfig](http://editorconfig.org/) plugin for your Editor (not mandatory).
-​
-### Node
-​
-[Node](http://nodejs.org/) is really easy to install & now include [NPM](https://npmjs.org/).
-You should be able to run the following command after the installation procedure
-below.
-​
-    $ node --version
-    v20.11.0
-​
-    $ npm --version
-    v10.2.4
-​
-#### Node installation on OS X
-​
-You will need to use a Terminal. On OS X, you can find the default terminal in
-`/Applications/Utilities/Terminal.app`.
-​
-Please install [Homebrew](http://brew.sh/) if it's not already done with the following command.
-​
-    $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-​
-If everything when fine, you should run
-​
+## Breweries List Assessment
+
+This project builds a web application displaying a list of breweries with pagination and details pages.
+
+### Requirements
+
+*   **Node.js:** Used for server-side development. Ensure you have Node.js installed (`node -v`) with a working npm package manager (`npm -v`).
+*   **Editor (Optional):** Any code editor with the EditorConfig plugin installed. This helps maintain consistent coding style across different editors.
+
+**Node.js Installation:**
+
+**OS X:**
+
+1.  Open Terminal (`/Applications/Utilities/Terminal.app`).
+2.  Install Homebrew (if not already installed):
+
+    ```bash
+    ruby -e "$(curl -fsSL [https://raw.githubusercontent.com/Homebrew/homebrew/go/install](https://raw.githubusercontent.com/Homebrew/homebrew/go/install))"
+    ```
+
+3.  Install Node.js:
+
+    ```bash
     brew install node
-​
-#### Node installation on Linux
-​
+    ```
+
+**Linux:**
+
+1.  Open Terminal
+2.  Update package lists:
+
+    ```bash
+    sudo apt-get update
+    ```
+3. Install dependencies:
+    ```bash
     sudo apt-get install python-software-properties
     sudo add-apt-repository ppa:chris-lea/node.js
+    ```
+4. Update package lists again:
+    ```bash
     sudo apt-get update
+    ```
+5. Install Node.js:
+
+    ```bash
     sudo apt-get install nodejs
-​
-# Frontend
-​npm install
-npm start
-## Languages & tools
-​
-​
-### React JS
-​
-​
-### Tailwind css
-## Features
-​
-Display list of breweries
-⁠Click next/previous button to go to next/previous respectively
-⁠Click on a brewery card to see its details
-editorconfig.orgeditorconfig.org
-EditorConfig
-EditorConfig is a file format and collection of text editor plugins for maintaining consistent coding styles between different editors and IDEs.
-nodejs.orgnodejs.org
-Node.js — Run JavaScript Everywhere
-Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+    ```
+
+### Development
+
+1.  Install project dependencies:
+
+    ```bash
+    npm install
+    ```
+
+2.  Run the application:
+
+    ```bash
+    npm start
+    ```
+
+### Technologies
+
+*   **Frontend:** React JS
+*   **Styling:** Tailwind CSS
+
+### Features
+
+*   Displays a list of breweries.
+*   Navigates through the brewery list using next/previous buttons.
+*   Click on a brewery card to view detailed information.
+
+**Note:** Links to `EditorConfig`, Node.js, and npm have been removed for clarity as they were already defined within the document.
